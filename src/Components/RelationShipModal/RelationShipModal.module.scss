@@ -1,0 +1,162 @@
+.formContainer
+{
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+    .title
+    {
+        font-weight: 2000;
+        font-size: 24px;
+        background-color: var(--background);
+        flex: 1;
+    }
+    .form
+    {
+        flex: 7;
+        .formFieldContainer
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            .sourceTable
+            {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+                .heading
+                {
+                    flex: 1;
+                    // margin: 5px;
+                    font-size: 15px;
+                }
+                .field
+                {
+                    flex: 1;
+                    padding: 12px;
+                    width: 50%;
+                    font-size: 12px;
+                    border-radius: 10px;
+                    border: 1px solid gray;
+                    // border: 2px solid black;
+                    
+                }
+                .field:focus{
+                    outline: none;
+                }
+            }
+            .targetTable
+            {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+                .heading
+                {
+                    flex: 1;
+                    // margin: 5px;
+                    font-size: 15px;
+                }
+                .field
+                {
+                    flex: 1;
+                    padding: 12px;
+                    width: 50%;
+                    border-radius: 10px;
+                    // border: none;
+                    border: 1px solid gray;
+                    // border: 2px solid black;
+                }
+                .field:focus{
+                    outline: none;
+                }
+            }
+            .relationShip
+            {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+                .heading
+                {
+                    flex: 1;
+                    // margin: 5px;
+                    font-size: 15px;
+                }
+                .field
+                {
+                    flex: 1;
+                    padding: 12px;
+                    width: 50%;
+                    border-radius: 10px;
+                    border: 1px solid gray;
+                    // border: 2px solid black;
+                }
+                .field:focus{
+                    outline: none;
+                }
+            }
+            .foreignKeyName
+            {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+                font-size: 15px;
+                .heading
+                {
+                    flex: 1;
+                    font-size: 15px;
+                }
+                .field:focus{
+                    outline: none;
+                }
+                .field
+                {
+                    flex: 1;
+                    padding: 12px;
+                    width: 50%;
+                    border-radius: 10px;
+                    background-color: white;
+                    border: 1px solid gray;
+                    // border: 2px solid black;
+                }
+            }
+        }
+    }
+    .button
+    {
+        // margin-top: 10px;
+        display: flex;
+        position: relative;
+        // height: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        // margin-top: 50px;
+        .submit
+        {
+            // top: 90%;
+            font-size: 20px;
+            color: white;
+            position: fixed;
+            
+            top: 67%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            background-color: rgb(0, 174, 255);
+           text-align: center;
+        }
+
+    }
+}

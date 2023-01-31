@@ -1,0 +1,58 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  background-color: white;
+  color: #0b0a0a;
+  img{
+   width:12%;
+  }
+  .mainbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .err,
+  .err1,
+  .err2 {
+    color: #0b0a0a;
+    font-family: inherit;
+    font-size: 8rem;
+    font-weight: bolder;
+  }
+
+  .error {
+    font-family: inherit;
+    color: red;
+    text-align: center;
+    word-spacing: 2px;
+  }
+
+  .err1 {
+    color: #2196F3;
+  }
+
+  .msg {
+    text-transform: uppercase;
+
+    .link_text{
+      color:black;
+      word-spacing: 2px;
+    }
+    .link {
+      text-decoration: none;
+      color: rgb(7, 56, 189);
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+  }
+}

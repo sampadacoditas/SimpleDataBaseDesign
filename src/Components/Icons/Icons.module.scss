@@ -1,0 +1,55 @@
+.icons {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  word-break: break-all;
+  position: relative;
+  padding: 0.2rem 0.5rem 0 0.5rem;
+  position: relative;
+  p {
+    padding: 0 0.225rem 0 0.225rem;
+    margin-top: -0.1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  &:hover {
+    border-radius: 10px;
+    background-color: #85a8cc;
+  }
+
+  .toolTip {
+    position: absolute;
+    top: 85%; 
+    left: 10%;
+    z-index: 2;
+    display: block;
+    width: 10vw;
+    border: 1px solid #979393;
+    font-family: monospace;
+    padding: 0.225rem;
+    background-color: white;
+    p {
+      white-space: normal;
+      padding-top: 0;
+      margin: 0;
+      font-size: smaller;
+      font-weight: 100;
+      color: rgb(51, 46, 46);
+      text-align: start;
+      span{
+        font-size: initial;
+        color: rgb(157 149 149);
+      }
+    }
+  }
+
+  .displayNone {
+    display: none;
+  }
+}
+
+

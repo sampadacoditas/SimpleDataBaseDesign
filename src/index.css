@@ -1,0 +1,78 @@
+:root {
+  --fontStyle1: "IBM Plex Mono";
+  --fontStyle2: "Source Code Pro";
+  --fontColor1: #26a69a;
+  --fontColor2: #ffffff;
+  --buttonColor: #c97b84;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-size: calc(.5 * (1.5vh + 1.1vw)); */
+  /* font-size: calc(.5em + 1vw); */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --background: #ffffff;
+  --text-primary: #363537;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+
+[data-theme="dark"] {
+  --background: #222222;
+  --text-primary: #ffffff;
+  --text-secondary: grey;
+  --accent: darkred;
+  --boxShadow-color1: rgb(168, 161, 161);
+  --boxShadow-color2: rgb(168, 161, 161);
+  --form-fields-background-color: lightgray;
+  --table-header-color: #302d2d;
+  --table-background: rgb(110, 105, 105);
+  --table-border: rgb(182, 167, 167);
+  --data-not-found-heading:#ffffff;
+}
+
+[data-theme="light"] {
+  --background: #ffffff;
+  --text-primary: #363537;
+  --text-secondary: grey;
+  --accent: darkred;
+  --boxShadow-color1: #1018281a;
+  --boxShadow-color2: #1018280f;
+
+  --table-header-color: #71b8f3;
+  --table-background: #f2f8fd;
+  --table-border: black;
+  --form-fields-background-color: white;
+  --data-not-found-heading:#2196F3;
+
+}
+
+.button-add-new-field {
+  background-color: #E9F4FE;
+  color: black;
+  border: 1px solid #d3d4d6;
+  box-shadow: 0 0.0625rem 0.125rem #1018280d;
+  padding: 0.8rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button-add-new-field:hover {
+  border: 1px solid #2196F3;
+}

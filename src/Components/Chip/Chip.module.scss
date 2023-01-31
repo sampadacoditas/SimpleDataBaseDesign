@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	padding: 0.25rem 0.5rem;
+	gap: 0.25rem;
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba($color: #9f86c0, $alpha: 0.3);
+	.btn {
+		color: #4a4e69;
+		transition: all 0.5s ease-in-out;
+		cursor: pointer;
+		&:hover {
+			color: tomato;
+		}
+	}
+}

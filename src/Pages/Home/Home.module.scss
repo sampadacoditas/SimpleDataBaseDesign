@@ -1,0 +1,128 @@
+.home_Container {
+  flex: 1;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+
+  .navigationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .breadcrumb {
+      width: 50%;
+    }
+
+    .breadcrumb a {
+      cursor: pointer;
+      font-size: x-large;
+      color: var(--text-primary);
+    }
+
+    .breadcrumb a:hover {
+      color: #39a1f6;
+    }
+
+    .sortSelect {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      width: 40%;
+      // color: var(--text-primary);
+      gap: 1rem;
+
+      .select_label {
+        color: var(--text-primary),
+      }
+
+      .sortbySelect {
+        color: var(--text-primary);
+      }
+    }
+  }
+
+  .icons_container {
+    width: 100vw;
+    height: 80vh;  
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .icons_container::-webkit-scrollbar{
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  .icons_container::-webkit-scrollbar-thumb{
+    background-color: #98a2b3;
+    border-radius: 0.4688rem;
+  }
+  .contextMenuContainer {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    padding: 0.5rem;
+    bottom: 1px solid;
+
+    p {
+      margin: 0;
+      border: 1px solid black;
+      padding: 0.5rem;
+    }
+  }
+}
+
+
+.menuList ul {
+  background-color: var(--background);
+  color: var(--text-primary)
+}
+
+
+@media screen and (max-width: 522px) {
+  .sortSelect {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .sortSelect {
+    font-size: 10px;
+  }
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  background-color: red;
+}
+
+.search {
+  width: 50%;
+  margin-top: 0.5rem;
+  // display: flex;
+
+  .searchBar {
+    font-family: "Roboto Mono", monospace;
+    width: 70%;
+    padding: 0.5rem;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(138, 135, 139);
+    color: var(--text-primary);
+    background-color: var(--background);
+    font-size: large;
+  }
+
+  .searchBar:hover:not(:focus) {
+    border-bottom: 2px solid black;
+  }
+
+  .searchBar:focus {
+    border-bottom: 2px solid #39a1f6;
+  }
+
+}

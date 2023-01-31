@@ -1,0 +1,59 @@
+.header {
+  z-index: 1;
+  height: 4rem;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 0.0625rem 0.1875rem var(--boxShadow-color1), 0 0.0625rem 0.125rem var(--boxShadow-color2);
+
+  .heading {
+    flex: 1;
+    margin-left: 10rem;
+    cursor: pointer;
+
+    .logo {
+      height: 50px;
+      width: auto;
+      background-size: cover;
+      margin-top: 0.5rem;
+    }
+  }
+
+  h1 {
+    // color: var(--background);
+    color: #2196F3;
+    margin-top: 0.6rem;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  .profileContainer {
+    display: flex;
+    font-size: 30px;
+    padding: 1rem;
+    margin-right: calc(20vw + 1rem);
+
+    .logout {
+      margin-left: 1rem;
+      font-size: medium;
+      color: var(--text-primary);
+    }
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .header {
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .header {
+    h1 {
+      font-size: 20px;
+    }
+  }
+}

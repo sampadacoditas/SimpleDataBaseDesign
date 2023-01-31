@@ -1,0 +1,18 @@
+.LayoutContainer {
+  color: var(--text-primary);
+  // background-color: var(--background);
+  font-size: large;
+  font-weight: bold;
+  height: 100vh;
+  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    color: var(--text-primary);
+  }
+
+  p {
+    color: var(--text-primary);
+  }
+}
